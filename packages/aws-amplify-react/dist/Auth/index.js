@@ -203,7 +203,7 @@ function withAuthenticator(Comp) {
                 var signedIn = authState === 'signedIn';
                 if (signedIn) {
                     return _react2.default.createElement(
-                        'div',
+                        _react2.default.Fragment,
                         null,
                         includeGreetings ? _react2.default.createElement(_Greetings2.default, {
                             authState: authState,
