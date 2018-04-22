@@ -253,7 +253,7 @@ var AuthenticatorWrapper = exports.AuthenticatorWrapper = function (_Component2)
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'div',
+                _react2.default.Fragment,
                 null,
                 _react2.default.createElement(_Authenticator2.default, _extends({}, this.props, { onStateChange: this.handleAuthState })),
                 this.props.children(this.state.auth)
