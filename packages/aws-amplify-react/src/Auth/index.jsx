@@ -100,10 +100,10 @@ export class AuthenticatorWrapper extends Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <Authenticator {...this.props} onStateChange={this.handleAuthState} />
                 {this.props.children(this.state.auth)}
-            </div>
+            </React.Fragment>
         )
     }
 }
